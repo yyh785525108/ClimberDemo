@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleProgressView">
+        <!--paint width-->
+        <attr name="progress_width" format="dimension" />
+        <!--paint color-->
+        <attr name="progress_color" format="color" />
+        <!--progress start position-->
+        <attr name="location_start" format="enum">
+            <enum name="left" value="1" />
+            <enum name="top" value="2" />
+            <enum name="right" value="3" />
+            <enum name="bottom" value="4" />
+        </attr>
+    </declare-styleable>
+
+
+</resources>

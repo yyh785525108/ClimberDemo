@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/login_bg"
+    >
+
+
+        <LinearLayout
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <com.prudential.climberdemo.view.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/head"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Climber"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="30dp"/>
+        </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintDimensionRatio="h,1:1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <com.prudential.climberdemo.view.CircleProgressView
+            android:id="@+id/circle_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+        <TextView
+            android:id="@+id/steps_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:text="12000"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_above="@+id/steps_tv"
+            android:layout_marginBottom="8dp"
+            android:layout_centerHorizontal="true"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:textColor="@color/colorWhite"
+            android:text="Steps"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_below="@+id/steps_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/colorWhite"
+            android:text="Today"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
